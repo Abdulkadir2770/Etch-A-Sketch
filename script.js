@@ -32,6 +32,10 @@ colors.forEach((color) => {
   color.addEventListener("click", (e) => {
     let color_change = e.target.id;
     console.log(color_change);
+
+    document.body.style.backgroundColor = color_change;
+    
+
   })
 })
 
