@@ -6,6 +6,8 @@
 
 button {
   cursor: pointer;
+  margin-left: 15px;
+  width: fit-content;
 }
 
 h2 {
@@ -25,7 +27,8 @@ h2 {
     /*grid-gap: 1em;*/
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: 50%;
+    width: 960px;
+    height: 100%;
     margin: auto;
   }
   
