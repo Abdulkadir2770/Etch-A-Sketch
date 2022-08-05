@@ -1,5 +1,6 @@
 const container = document.getElementById("container");
 const button = document.getElementById("btn");
+const refresh_btn = document.getElementById("refresh-btn");
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -16,8 +17,12 @@ makeRows(16, 16);
 // grid change when the top button is pressed
 button.addEventListener("click", () => {
   let userInput = prompt();
+  makeRows(userInput, userInput);
 })
 
-makeRows(userInput, userInput);
+// Refreshes page when btn is clicked
+refresh_btn.addEventListener("click", () => {
+  window.parent.location = window.parent.location.href;
+})
 
 
