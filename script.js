@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+const button = document.getElementById("btn");
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -11,3 +12,12 @@ function makeRows(rows, cols) {
 };
 
 makeRows(16, 16);
+
+// grid change when the top button is pressed
+button.addEventListener("click", () => {
+  let userInput = prompt();
+})
+
+makeRows(userInput, userInput);
+
+
