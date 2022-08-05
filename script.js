@@ -14,7 +14,7 @@ function makeRows(rows, cols) {
 
 makeRows(16, 16);
 
-// grid change when the top button is pressed
+// changes the dimenstions to what the user inputs
 button.addEventListener("click", () => {
   let userInput = prompt();
   makeRows(userInput, userInput);
