@@ -23,4 +23,18 @@ h2 {
     padding: 1em;
     border: 1px solid #8a8888;
     text-align: center;
-  }
+    /*opacity: 0;
+    transition: opacity 0.4s ease;
+    *//*addingatransistingeffect*/transition: opacity 2s ease 1.10s, transform 1.10s ease;
+    transform: scale(1);
+    -webkit-transition: opacity 2s ease 0.4s, transform 1.10s ease;
+    -moz-transition: opacity 2s ease 0.4s, transform 1.10s ease;
+    -ms-transition: opacity 2s ease 0.4s, transform 1.10s ease;
+    -o-transition: opacity 2s ease 0.4s, transform 1.10s ease;
+}
+
+  .grid-item:hover {
+    background-color: red;
+    opacity: 1;
+    transform: scale(1.04);
+}
