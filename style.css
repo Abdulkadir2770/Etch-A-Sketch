@@ -10,12 +10,6 @@ button {
   width: fit-content;
 }
 
-h2 {
-  color: blue;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /* Grid*/
 :root {
     --grid-cols: 1;
@@ -27,27 +21,77 @@ h2 {
     /*grid-gap: 1em;*/
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: 960px;
+    width: 50%;
     height: 100%;
     margin: auto;
   }
   
   .grid-item {
-    padding: 1em;
+    padding: 0.9em;
     border: 1px solid #8a8888;
     text-align: center;
     /*opacity: 0;
     transition: opacity 0.4s ease;
     *//*addingatransistingeffect*/transition: opacity 2s ease 1.10s, transform 1.10s ease;
     transform: scale(1);
-    -webkit-transition: opacity 2s ease 0.4s, transform 1.10s ease;
-    -moz-transition: opacity 2s ease 0.4s, transform 1.10s ease;
-    -ms-transition: opacity 2s ease 0.4s, transform 1.10s ease;
-    -o-transition: opacity 2s ease 0.4s, transform 1.10s ease;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -ms-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
 }
 
   .grid-item:hover {
     background-color: red;
     opacity: 1;
     transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
+/* color section*/
+.colors {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#black {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#green {
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#blue {
+  background-color: blue;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#orange {
+  background-color: orange;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#purple {
+  background-color: purple;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }
