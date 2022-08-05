@@ -1,6 +1,8 @@
 const container = document.getElementById("container");
 const button = document.getElementById("btn");
 const refresh_btn = document.getElementById("refresh-btn");
+const colors = document.querySelectorAll(".colors");
+
 
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
@@ -23,6 +25,14 @@ button.addEventListener("click", () => {
 // Refreshes page when btn is clicked
 refresh_btn.addEventListener("click", () => {
   window.parent.location = window.parent.location.href;
+})
+
+// changes the grid trail background color
+colors.forEach((color) => {
+  color.addEventListener("click", (e) => {
+    let color_change = e.target.id;
+    console.log(color_change);
+  })
 })
 
 
