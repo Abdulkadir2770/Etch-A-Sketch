@@ -49,10 +49,10 @@ button {
     background-color: red;
     opacity: 1;
     transform: scale(1.04);
-    -webkit-transform: scale(1.04);
-    -moz-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
 }
 */
 
@@ -63,8 +63,8 @@ button {
   justify-content: center;
 }
 
-#black {
-  background-color: black;
+#red {
+  background-color: red;
   width: 40px;
   height: 40px;
   cursor: pointer;
