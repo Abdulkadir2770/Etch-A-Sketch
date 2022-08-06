@@ -44,6 +44,7 @@ button {
     -o-transform: scale(1);
 }
 
+  /*
   .grid-item:hover {
     background-color: red;
     opacity: 1;
@@ -53,6 +54,7 @@ button {
     -ms-transform: scale(1.04);
     -o-transform: scale(1.04);
 }
+*/
 
 /* color section*/
 .colors {
