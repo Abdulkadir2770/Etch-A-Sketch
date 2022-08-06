@@ -10,6 +10,11 @@ function makeRows(rows, cols) {
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     //cell.innerText = (c + 1);
+
+    cell.addEventListener("mouseover", () => {
+      cell.style.backgroundColor = "blackt "
+    })
+
     container.appendChild(cell).className = "grid-item";
   };
 };
@@ -31,11 +36,8 @@ refresh_btn.addEventListener("click", () => {
 colors.forEach((color) => {
   color.addEventListener("click", (e) => {
     let color_change = e.target.id;
-    console.log(color_change);
 
-    document.body.style.backgroundColor = color_change;
-    
-
+    container.style.backgroundColor = color_change;
   })
 })
 
