@@ -1,7 +1,8 @@
 const container = document.getElementById("container");
 const button = document.getElementById("btn");
 const refresh_btn = document.getElementById("refresh-btn");
-const colors = document.querySelectorAll(".colors");
+const colorPicker = document.querySelector("#colorPicker");
+
 
 
 function makeRows(rows, cols) {
@@ -34,6 +35,7 @@ refresh_btn.addEventListener("click", () => {
 })
 
 // changes the grid trail background color
+/*
 colors.forEach((color) => {
   color.addEventListener("click", (e) => {
     let color_change = e.target.id;
@@ -41,5 +43,20 @@ colors.forEach((color) => {
     container.style.backgroundColor = color_change;
   })
 })
+*/
+
+// change color
+colorPicker.addEventListener("input", () => {
+  let newColor = document.getElementById("colorPicker").value;
+  let cells = container.children;
+
+  for(let i = 0; i < cells.length; i++) {
+    cells[i].addEventListener("mouseover", (cell) => {
+        cell.target.style.backgroundColor = newColor;
+    })
+  }
+})
+
+
 
 
