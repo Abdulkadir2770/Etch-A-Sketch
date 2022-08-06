@@ -10,11 +10,9 @@ function makeRows(rows, cols) {
   for (c = 0; c < (rows * cols); c++) {
     let cell = document.createElement("div");
     //cell.innerText = (c + 1);
-
     cell.addEventListener("mouseover", () => {
-      cell.style.backgroundColor = "blackt "
-    })
-
+      cell.style.backgroundColor = "black"
+    });
     container.appendChild(cell).className = "grid-item";
   };
 };
@@ -23,6 +21,9 @@ makeRows(16, 16);
 
 // changes the dimenstions to what the user inputs
 button.addEventListener("click", () => {
+  while(container.firstChild){
+    container.removeChild(container.firstChild);
+}
   let userInput = prompt();
   makeRows(userInput, userInput);
 })
