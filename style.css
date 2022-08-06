@@ -57,43 +57,14 @@ button {
 */
 
 /* color section*/
-.colors {
+.colorPicker {
   margin-top: 10px;
   display: flex;
   justify-content: center;
 }
 
-#red {
-  background-color: red;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+/* color picker section*/
+#colorPicker {
+  width: 150px;
 }
 
-#green {
-  background-color: green;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-#blue {
-  background-color: blue;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-#orange {
-  background-color: orange;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-#purple {
-  background-color: purple;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
